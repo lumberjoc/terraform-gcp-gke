@@ -27,7 +27,7 @@ resource "google_container_cluster" "primary" {
   }
 
   workload_identity_config {
-    workload_pool = "kubernetes-cluster-staging.svc.id.goog"
+    workload_pool = "agile-bonbon-416422.svc.id.goog"
   }
 
   ip_allocation_policy {
