@@ -1,11 +1,11 @@
 provider "google" {
-  project = "kubernetes-cluster-staging"
+  project = "k8s-cluster-primary"
   region  = "us-central1"
 }
 
 terraform {
   backend "gcs" {
-    bucket = "jlb-tf-state-staging"
+    bucket = "jbev-tf-state-staging"
     prefix = "terraform/state"
   }
 
